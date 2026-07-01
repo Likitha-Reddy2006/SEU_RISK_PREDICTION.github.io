@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SEU Risk Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛰 AI-Based SEU Risk Prediction</h1>
+
+        <p>
+            Please enter all system parameters below to predict the SEU risk using our Machine Learning model.
+        </p>
+
+        <form action="/result" method="POST">
+
+            <h2>Enter System Parameters</h2>
+
+            <p style="color:black; text-align:center; margin-bottom:20px;">
+                Fill in the required values below to predict the SEU risk.
+            </p>
+
+            <table align="center" cellpadding="10">
+
+                <tr>
+                    <td><label for="radiation">Radiation Intensity:</label></td>
+                    <td>
+                        <input type="number" id="radiation" name="radiation" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="temperature">Operating Temperature:</label></td>
+                    <td>
+                        <input type="number" id="temperature" name="temperature" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="voltage">Operating Voltage:</label></td>
+                    <td>
+                        <input type="number" step="0.1" id="voltage" name="voltage" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="device">Device Type:</label></td>
+                    <td>
+                        <select id="device" name="device" required>
+                            <option value="0">Type A</option>
+                            <option value="1">Type B</option>
+                            <option value="2">Type C</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="memory">Memory Utilization (%):</label></td>
+                    <td>
+                        <input type="number" id="memory" name="memory" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="communication">Communication Load (%):</label></td>
+                    <td>
+                        <input type="number" id="communication" name="communication" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="error">Error Rate:</label></td>
+                    <td>
+                        <input type="number" step="0.01" id="error" name="error" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="environment">Environmental Condition:</label></td>
+                    <td>
+                        <select id="environment" name="environment" required>
+                            <option value="0">Normal</option>
+                            <option value="1">Moderate</option>
+                            <option value="2">Extreme</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="faults">Previous Faults:</label></td>
+                    <td>
+                        <input type="number" id="faults" name="faults" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align:center; padding-top:20px;">
+                        <button type="submit">Predict</button>
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

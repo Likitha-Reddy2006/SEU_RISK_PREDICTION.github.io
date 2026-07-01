@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+    color:white;
+    text-align:center;
+}
+
+.container{
+    margin-top:70px;
+}
+
+h1{
+    font-size:42px;
+}
+
+p{
+    width:70%;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+}
+
+form{
+
+    width:450px;
+    margin:auto;
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:15px;
+
+}
+
+input,select{
+
+    width:95%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+
+    background:#2196F3;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    display:inline-block;
+}
+
+button:hover{
+
+    background:#0d47a1;
+}
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+.features{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    color:black;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0d47a1;
+    margin-bottom:15px;
+}
+.button-container{
+    text-align:center;
+    margin-top:30px;
+}
